@@ -1,0 +1,19 @@
+# Core (all notebooks)
+# Core (all notebooks + app)
+pandas
+numpy
+matplotlib
+scikit-learn
+streamlit
+
+# SARIMAX.ipynb
+statsmodels
+
+# Prophet.ipynb
+prophet
+
+# XGBoost_Final_Model.ipynb
+xgboost
+
+# LSTM.ipynb and Seq2Seq.ipynb
+tensorflow
