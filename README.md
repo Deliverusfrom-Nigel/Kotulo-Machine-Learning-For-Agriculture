@@ -68,21 +68,7 @@ The original project finished with XGBoost because neural networks need a lot of
 * **Benchmarks.** The naive forecast (the price stays where it is) is reported next to every model. Where the notebook supports it (SARIMAX, Prophet, LSTM), the same model *without* the external drivers is shown too. A model earns its place by beating them.
 * **No look-ahead.** The tree and neural models build their inputs only from information available when the forecast would have been made. The scalers are fitted on the training block only.
 
-### Results
 
-Fill in after running the notebooks (each notebook prints its own metrics table).
-
-| Model | Forecast style | MAE (R/ton) | RMSE (R/ton) | MAPE % | Beats naive? |
-|---|---|---|---|---|---|
-| SARIMAX + drivers | multi-step over the test block | | | | |
-| SARIMAX + drivers | one-step-ahead | | | | |
-| Prophet + drivers | multi-step over the test block | | | | |
-| XGBoost | 1-day ahead | | | | |
-| LSTM + drivers | 1-day ahead | | | | |
-| Seq2Seq | 5 days ahead (average over days 1 to 5) | | | | |
-| Naive benchmark | same horizon as the row it is compared with | | | | |
-
-Rows with different forecast styles are not directly comparable: predicting one day ahead is much easier than predicting a whole test block ahead.
 
 ### Profitability for the farmer
 
